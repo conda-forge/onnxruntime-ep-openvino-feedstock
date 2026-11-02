@@ -47,7 +47,6 @@ tests:
       run:
         - python
         - onnxruntime
-        - onnx
         - numpy
     files:
       recipe:
