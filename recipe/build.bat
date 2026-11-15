@@ -2,9 +2,9 @@
 
 mkdir ort-root\include\onnxruntime
 if errorlevel 1 exit 1
-copy "%LIBRARY_INC%\onnxruntime\core\session\*.h" ort-root\include\onnxruntime\
+copy "%LIBRARY_INC%\onnxruntime\*.h" ort-root\include\onnxruntime\
 if errorlevel 1 exit 1
-copy "%LIBRARY_INC%\onnxruntime\core\session\*.inc" ort-root\include\onnxruntime\
+copy "%LIBRARY_INC%\onnxruntime\*.inc" ort-root\include\onnxruntime\
 if errorlevel 1 exit 1
 set "ONNXRUNTIME_ROOT_DIR=%SRC_DIR%\ort-root"
 set "INTEL_OPENVINO_DIR=%LIBRARY_PREFIX%"

@@ -2,7 +2,7 @@
 set -euxo pipefail
 
 mkdir -p ort-root/include/onnxruntime
-cp "${PREFIX}"/include/onnxruntime/core/session/*.{h,inc} ort-root/include/onnxruntime/
+cp "${PREFIX}"/include/onnxruntime/*.{h,inc} ort-root/include/onnxruntime/
 export ONNXRUNTIME_ROOT_DIR="${SRC_DIR}/ort-root"
 export INTEL_OPENVINO_DIR="${PREFIX}"
 
