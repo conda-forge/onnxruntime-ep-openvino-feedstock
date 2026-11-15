@@ -1,9 +1,7 @@
 #!/bin/bash
 set -euxo pipefail
 
-mkdir -p ort-root/include/onnxruntime
-cp "${PREFIX}"/include/onnxruntime/core/session/*.{h,inc} ort-root/include/onnxruntime/
-export ONNXRUNTIME_ROOT_DIR="${SRC_DIR}/ort-root"
+export ONNXRUNTIME_ROOT_DIR="${PREFIX}"
 export INTEL_OPENVINO_DIR="${PREFIX}"
 
 cmake -G Ninja -B build ${CMAKE_ARGS} \

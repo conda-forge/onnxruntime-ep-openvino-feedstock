@@ -16,7 +16,7 @@ source:
     - patches/0003-use-stable-epcontextconfig-with-ort-1.31.patch
 
 build:
-  number: 0
+  number: 1
   skip:
     - not x86_64
     - osx
