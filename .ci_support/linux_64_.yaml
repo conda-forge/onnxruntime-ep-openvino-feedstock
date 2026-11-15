@@ -20,6 +20,8 @@ docker_image:
 - quay.io/condaforge/linux-anvil-x86_64:alma10
 libopenvino_dev:
 - 2026.4.1
+onnxruntime_cpp:
+- 1.32.0
 target_platform:
 - linux-64
 zip_keys:

@@ -10,5 +10,7 @@ cxx_compiler:
 - vs2022
 libopenvino_dev:
 - 2026.4.1
+onnxruntime_cpp:
+- 1.32.0
 target_platform:
 - win-64
