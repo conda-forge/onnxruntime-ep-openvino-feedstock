@@ -1,12 +1,6 @@
 @echo on
 
-mkdir ort-root\include\onnxruntime
-if errorlevel 1 exit 1
-copy "%LIBRARY_INC%\onnxruntime\*.h" ort-root\include\onnxruntime\
-if errorlevel 1 exit 1
-copy "%LIBRARY_INC%\onnxruntime\*.inc" ort-root\include\onnxruntime\
-if errorlevel 1 exit 1
-set "ONNXRUNTIME_ROOT_DIR=%SRC_DIR%\ort-root"
+set "ONNXRUNTIME_ROOT_DIR=%LIBRARY_PREFIX%"
 set "INTEL_OPENVINO_DIR=%LIBRARY_PREFIX%"
 
 cmake -G Ninja -B build %CMAKE_ARGS% ^
